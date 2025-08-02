@@ -16,24 +16,24 @@
                 <input class="inp" type="text" readonly>
                 <div class="operators">
                     <button class="btn-grey" onclick="clearDisplay()">C</button>
-                    <button class="btn-grey" onclick="appendToDisplay('')">+/-</button>
-                    <button class="btn-grey" onclick="appendToDisplay('%')">%</button>
-                    <button class="btn-orange" onclick="appendToDisplay('÷')">÷</button>
-                    <button onclick="appendToDisplay('7')">7</button>
-                    <button onclick="appendToDisplay('8')">8</button>
-                    <button onclick="appendToDisplay('9')">9</button>
-                    <button class="btn-orange" onclick="appendToDisplay('*')">x</button>
-                    <button onclick="appendToDisplay('4')">4</button>
-                    <button onclick="appendToDisplay('5')">5</button>
-                    <button onclick="appendToDisplay('6')">6</button>
-                    <button class="btn-orange" onclick="appendToDisplay('-')">-</button>
-                    <button onclick="appendToDisplay('1')">1</button>
-                    <button onclick="appendToDisplay('2')">2</button>
-                    <button onclick="appendToDisplay('3')">3</button>
-                    <button class="btn-orange" onclick="appendToDisplay('+')">+</button>
-                    <button class="zero" onclick="appendToDisplay('0')">0</button>
-                    <button onclick="appendToDisplay('.')">,</button>
-                    <button class="btn-orange" onclick="calculate()">=</button>
+                    <button class="btn-grey" onclick="toggleSign()">+/-</button>
+                    <button class="btn-grey" onclick="percent()">%</button>
+                    <button class="btn-orange" onclick="calc('÷')">÷</button>
+                    <button onclick="calc('7')">7</button>
+                    <button onclick="calc('8')">8</button>
+                    <button onclick="calc('9')">9</button>
+                    <button class="btn-orange" onclick="calc('*')">x</button>
+                    <button onclick="calc('4')">4</button>
+                    <button onclick="calc('5')">5</button>
+                    <button onclick="calc('6')">6</button>
+                    <button class="btn-orange" onclick="calc('-')">-</button>
+                    <button onclick="calc('1')">1</button>
+                    <button onclick="calc('2')">2</button>
+                    <button onclick="calc('3')">3</button>
+                    <button class="btn-orange" onclick="calc('+')">+</button>
+                    <button class="zero" onclick="calc('0')">0</button>
+                    <button onclick="calc('.')">,</button>
+                    <button class="btn-orange" onclick="calc()">=</button>
 
 
 
@@ -50,13 +50,3 @@
 
 </html>
 
-
-
-
-
-
-<!-- eval() nə edir?	String içindəki JavaScript kodunu icra edir  Alternativ varmı?	✔️ Bəli, Function(), math.js və ya öz hesablama funksiyan -->
-<!-- appendToDisplay
-clearDisplay
-calculate
-readonly atributu o deməkdir ki, input və ya textarea sahəsinin dəyəri dəyişdirilə bilməz
