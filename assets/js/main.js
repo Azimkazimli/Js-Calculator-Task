@@ -4,7 +4,7 @@ const calc = (value) => {
     input.value += value;
 }
 
-const clearDisplay = () => {
+const clearCalc = () => {
     input.value = "";
 }
 
